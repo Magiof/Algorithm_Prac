@@ -1,4 +1,6 @@
 // 격자판 최대합
+// 5x5 배열에서 각 행,열,대각선 의 합 중
+// 최대값이 되는 합을 출력
 function solution(arr) {
   let answer = (sum1 = sum2 = sum3 = sum4 = 0);
   let n = arr.length;
