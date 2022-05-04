@@ -22,5 +22,22 @@ function solution(n, arr) {
   return answer;
 }
 
+function solution2(n, arr) {
+  let answer,
+    max = Number.MIN_SAFE_INTEGER;
+  for (let x of arr) {
+    let sum = x
+      .toString()
+      .split("")
+      .reduce((a, b) => a + Number(b), 0);
+    if (max < sum) {
+      max = sum;
+      answer = x;
+    } else if (max === sum && answer < x) answer = x;
+    sum = 0;
+  }
+  return answer;
+}
+
 let arr = [128, 460, 603, 40, 521, 137, 123];
 console.log(solution(7, arr));
