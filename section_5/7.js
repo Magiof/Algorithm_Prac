@@ -36,5 +36,9 @@ function solution2(str1, str2) {
 }
 let a = "AbaAeCe";
 let b = "baeeACA";
+let c = "abaCC";
+let d = "Caaab";
 console.log(solution(a, b));
 console.log(solution2(a, b));
+console.log(solution(c, d));
+console.log(solution2(c, d));
