@@ -9,6 +9,7 @@ function solution(s) {
       while (stack.pop() !== "(");
     } else stack.push(x);
   }
+  answer = stack.join("");
   return answer;
 }
 
