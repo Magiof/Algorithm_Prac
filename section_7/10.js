@@ -6,7 +6,7 @@ function solution(arr, n) {
   let tmp = arr.sort((a, b) => a - b);
   let lt = 0;
   let rt = arr.length - 1;
-  while (1) {
+  while (lt<=rt) {
     let mid = parseInt((lt + rt) / 2);
     if (tmp[mid] === n) {
       answer = mid + 1;
